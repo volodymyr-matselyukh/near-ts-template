@@ -9,5 +9,8 @@ fi
 
 echo ">> Deploying contract"
 
+
+#near create-account matseliukh-test.testnet --useFaucet
+
 # https://docs.near.org/tools/near-cli#near-dev-deploy
-near dev-deploy --wasmFile build/contract.wasm
+near deploy matseliukh-test.testnet build/contract.wasm
